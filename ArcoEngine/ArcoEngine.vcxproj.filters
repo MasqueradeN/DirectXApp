@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="core">
+      <UniqueIdentifier>{f0e8dc3b-3020-4f87-8af8-fee96d50e2be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\timer">
+      <UniqueIdentifier>{6328d6cb-d658-429e-af4e-d31fd5883604}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{bb2cd3eb-9b3e-42ba-8b1e-c0b695046745}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render">
+      <UniqueIdentifier>{ac1129db-6b68-4814-8c75-a7d80651fb6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scene">
+      <UniqueIdentifier>{2b5d9078-404c-4531-809c-07403b47eb38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render\materials">
+      <UniqueIdentifier>{0396ea0a-6792-467d-bc05-fadb04abac87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scene\logic">
+      <UniqueIdentifier>{9634b2cb-5c7f-4f8f-b9df-9740d336c09f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scene\model">
+      <UniqueIdentifier>{e34d872a-e7e7-400c-8d66-290eb921460c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{10b36229-3052-4cfa-a916-79b704ef2ced}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="core\timer\Timer.h">
+      <Filter>core\timer</Filter>
+    </ClInclude>
+    <ClInclude Include="core\ArcosApp.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="core\WinApplication.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\pugiconfig.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\pugixml.hpp">
+      <Filter>tools</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\SceneMgr.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\logic\SceneLoader.h">
+      <Filter>scene\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\logic\UMath.h">
+      <Filter>scene\logic</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\model\Cubo.h">
+      <Filter>scene\model</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\model\ModelColor.h">
+      <Filter>scene\model</Filter>
+    </ClInclude>
+    <ClInclude Include="render\materials\MaterialBase.h">
+      <Filter>render\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="render\materials\MaterialColor.h">
+      <Filter>render\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="render\materials\VertexFormat.h">
+      <Filter>render\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="render\DXCamera.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="render\DXCore.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\model\ModelBase.h">
+      <Filter>scene\model</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\model\ModelPhColor.h">
+      <Filter>scene\model</Filter>
+    </ClInclude>
+    <ClInclude Include="render\materials\MaterialPhongColor.h">
+      <Filter>render\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\model\CuboP.h">
+      <Filter>scene\model</Filter>
+    </ClInclude>
+    <ClInclude Include="render\materials\MaterialTexture.h">
+      <Filter>render\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\model\ModelTexture.h">
+      <Filter>scene\model</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\model\CuboT.h">
+      <Filter>scene\model</Filter>
+    </ClInclude>
+    <ClInclude Include="render\materials\WICTextureLoader.h">
+      <Filter>render\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\model\Panel.h">
+      <Filter>scene\model</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\model\ModelRTT.h">
+      <Filter>scene\model</Filter>
+    </ClInclude>
+    <ClInclude Include="render\DXRenderToTexture.h">
+      <Filter>render</Filter>
+    </ClInclude>
+    <ClInclude Include="scene\model\tiny_obj_loader.h">
+      <Filter>scene\model</Filter>
+    </ClInclude>
+    <ClInclude Include="HungryHippos.h">
+      <Filter>scene\logic</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\ArcosApp.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="core\WinApplication.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\pugixml.cpp">
+      <Filter>tools</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\SceneMgr.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\logic\SceneLoader.cpp">
+      <Filter>scene\logic</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\model\Cubo.cpp">
+      <Filter>scene\model</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\model\ModelColor.cpp">
+      <Filter>scene\model</Filter>
+    </ClCompile>
+    <ClCompile Include="render\materials\MaterialBase.cpp">
+      <Filter>render\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="render\materials\MaterialColor.cpp">
+      <Filter>render\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="render\DXCamera.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="render\DXCore.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\model\ModelPhColor.cpp">
+      <Filter>scene\model</Filter>
+    </ClCompile>
+    <ClCompile Include="render\materials\MaterialPhongColor.cpp">
+      <Filter>render\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\model\CuboP.cpp">
+      <Filter>scene\model</Filter>
+    </ClCompile>
+    <ClCompile Include="render\materials\MaterialTexture.cpp">
+      <Filter>render\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\model\ModelTexture.cpp">
+      <Filter>scene\model</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\model\CuboT.cpp">
+      <Filter>scene\model</Filter>
+    </ClCompile>
+    <ClCompile Include="render\materials\WICTextureLoader.cpp">
+      <Filter>render\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\model\Panel.cpp">
+      <Filter>scene\model</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\model\ModelRTT.cpp">
+      <Filter>scene\model</Filter>
+    </ClCompile>
+    <ClCompile Include="render\DXRenderToTexture.cpp">
+      <Filter>render</Filter>
+    </ClCompile>
+    <ClCompile Include="scene\model\tiny_obj_loader.cc">
+      <Filter>scene\model</Filter>
+    </ClCompile>
+    <ClCompile Include="HungryHippos.cpp">
+      <Filter>scene\logic</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="data\ColorShader_PS.fx">
+      <Filter>data</Filter>
+    </FxCompile>
+    <FxCompile Include="data\ColorShader_VS.fx">
+      <Filter>data</Filter>
+    </FxCompile>
+    <FxCompile Include="data\PhongShader_PS.fx">
+      <Filter>data</Filter>
+    </FxCompile>
+    <FxCompile Include="data\PhongShader_VS.fx">
+      <Filter>data</Filter>
+    </FxCompile>
+    <FxCompile Include="data\TextureShader_PS.fx">
+      <Filter>data</Filter>
+    </FxCompile>
+    <FxCompile Include="data\TextureShader_VS.fx">
+      <Filter>data</Filter>
+    </FxCompile>
+    <FxCompile Include="data\SoloTexShader_PS.fx">
+      <Filter>data</Filter>
+    </FxCompile>
+    <FxCompile Include="data\SoloTexShader_VS.fx">
+      <Filter>data</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
