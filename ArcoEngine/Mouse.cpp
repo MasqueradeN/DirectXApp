@@ -45,7 +45,13 @@ bool Mouse::Initialize(HWND winhandle)
 
 void Mouse::Shutdown()
 {
-
+    if (mMouse)
+    {
+        mMouse->Unacquire();
+        mMouse = nullptr;
+    }
+	mDI = nullptr;
+    Reset();
 }
 
 void Mouse::Poll()
@@ -110,8 +116,19 @@ void Mouse::Poll()
     }
 }
 
+void Mouse::HideCursor()
+{
+    ::ShowCursor(false);
+}
+
+void Mouse::ShowCursor()
+{
+    ::ShowCursor(true);
+}
+
 void Mouse::SetExclusive(bool inExclusive)
 {
+    mMouse->SetCooperativeLevel(mWindowHandle, (inExclusive ? DISCL_EXCLUSIVE : DISCL_NONEXCLUSIVE) | DISCL_FOREGROUND);
 }
 
 void Mouse::Reset()
