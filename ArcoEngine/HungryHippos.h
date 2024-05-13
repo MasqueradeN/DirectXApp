@@ -12,10 +12,10 @@ public:
 	~HungryHippos();
 
 	void Initialize(ID3D11Device* device, ID3D11DeviceContext* context, DXCamera* camera, const std::wstring& textname, const std::string &modelname);
-	void update(float elapsedTime);
-	void draw();
 
-	void drawModel(float x, float y, float z, float angDeg);
+	void update(float elapsedTime);
+
+	void drawModel(float tx, float ty, float tz, float rx, float ry, float rz);
 
 private:
 

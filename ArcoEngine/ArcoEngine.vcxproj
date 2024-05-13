@@ -106,7 +106,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxgi.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>d3d11.lib;d3dcompiler.lib;dxgi.lib;dxguid.lib;dinput8.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -148,6 +148,7 @@
     <ClInclude Include="core\timer\Timer.h" />
     <ClInclude Include="core\WinApplication.h" />
     <ClInclude Include="HungryHippos.h" />
+    <ClInclude Include="Mouse.h" />
     <ClInclude Include="render\DXCamera.h" />
     <ClInclude Include="render\DXCore.h" />
     <ClInclude Include="render\DXRenderToTexture.h" />
@@ -177,6 +178,7 @@
     <ClCompile Include="core\ArcosApp.cpp" />
     <ClCompile Include="core\WinApplication.cpp" />
     <ClCompile Include="HungryHippos.cpp" />
+    <ClCompile Include="Mouse.cpp" />
     <ClCompile Include="render\DXCamera.cpp" />
     <ClCompile Include="render\DXCore.cpp" />
     <ClCompile Include="render\DXRenderToTexture.cpp" />

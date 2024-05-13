@@ -9,5 +9,5 @@ public:
 	~CCuboT(void)		{ }
 
 	void InsertModel(const std::string &modelname);
-	void drawModel(float, float, float);
+	void drawModel(float, float, float, float, float, float);
 };

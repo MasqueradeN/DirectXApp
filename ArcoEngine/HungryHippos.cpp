@@ -33,9 +33,9 @@ void HungryHippos::update(float elapsedTime)
 
 }
 
-void HungryHippos::drawModel(float x, float y, float z, float angDeg)
+void HungryHippos::drawModel(float tx, float ty, float tz, float rx, float ry, float rz)
 {
-	mHippoHead->drawModel(x, y, z);
-	mHippoNeck->drawModel(x, y, z);
-	mHippoBody->drawModel(x, y, z);
+	mHippoHead->drawModel(tx, ty, tz, rx, ry, rz);
+	mHippoNeck->drawModel(tx, ty, tz, rx, ry, rz);
+	mHippoBody->drawModel(tx, ty, tz, rx, ry, rz);
 }

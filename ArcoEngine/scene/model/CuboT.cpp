@@ -59,18 +59,25 @@ void CCuboT::InsertModel(const std::string &modelname)
 	setBuffers();
 }
 
-void CCuboT::drawModel(float lx, float ly, float lz)
+void CCuboT::drawModel(float lx, float ly, float lz, float rx, float ry, float rz)
 {
 	setShaders();
 	setRenderProperties();
 	activateBuffers();
-	ID3D11Buffer *conbuf = mMaterialTexture->GetVConstantBuffer0();
+	ID3D11Buffer* conbuf = mMaterialTexture->GetVConstantBuffer0();
 
 	MathUtil::CMatrix translation =
 		MathUtil::MatrixTranslation(lx, ly, lz);
 	translation = MathUtil::MatrixTranspose(translation);
-	
-	mpContext->UpdateSubresource(conbuf, 0, nullptr, &translation, 0, 0);
+	MathUtil::CMatrix rotationx = MathUtil::MatrixRotationX(rx);
+	MathUtil::CMatrix rotationy = MathUtil::MatrixRotationY(ry);
+	MathUtil::CMatrix rotationz = MathUtil::MatrixRotationZ(rz);
+	MathUtil::CMatrix rotation = MathUtil::Multiply(rotationx, rotationy);
+	rotation = MathUtil::Multiply(rotation, rotationz);
+	MathUtil::CMatrix transform = MathUtil::Multiply(rotation, translation);
+
+	mpContext->UpdateSubresource(conbuf, 0, nullptr, &transform, 0, 0);
+
 	mpContext->VSSetConstantBuffers(0, 1, &conbuf);
 
 	mpContext->DrawIndexed(mIndexBufferSize, 0, 0);

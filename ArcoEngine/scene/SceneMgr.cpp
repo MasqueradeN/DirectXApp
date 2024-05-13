@@ -64,7 +64,7 @@ void CSceneMgr::Initialize(
 	mPanel->Initialize(mCamera);
 	mPanel->InsertModel();
 
-	hippont.Initialize(device, dcontext, mCamera, L"hiposaeAzul.png", "data/pezHead3.obj");
+	hippont.Initialize(device, dcontext, mCamera, L"hiposaeAzul.png", "data/HippoBody.obj");
 }
 
 void CSceneMgr::update(float deltaTime)
@@ -81,8 +81,8 @@ void CSceneMgr::draw(float deltaTime)
 	angle += deltaTime;
 
 	//mCubePhong->drawModel(0/*cosf(angle)*/, 0, 0/*sinf(angle)*/, 0/*angle*/, 0, 0);
-	mCubeTexture->drawModel(0, 0, 0);
+	//mCubeTexture->drawModel(0, 0, 0);
 	//mPanel->drawModel(0.75f, 0.75f, 0);
 	//changeCamera();
-	hippont.drawModel(0,0,0,0);
+	hippont.drawModel(0,0,-5,0,cosf(angle), 0);
 }

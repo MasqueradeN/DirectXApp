@@ -8,9 +8,9 @@ SamplerState samLinear : register(s0);
 
 static float4 ambientLight = { 1.0f, 1.0f, 1.0f, 1.0f };
 static float4 lightColor = { 1.0f, 1.0f, 1.0f, 1.0f };
-static float3 lightDir = { 1.0f, 1.0f, -0.0f };
+static float3 lightDir = { 1.0f, -1.0f, -0.0f };
 
-static float MKa = 0.1f;
+static float MKa = 0.2f;
 static float MKd = 0.5f;
 static float MKs = 0.5f;
 static float MA = 30.0f;

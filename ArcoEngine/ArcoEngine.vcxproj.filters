@@ -111,8 +111,11 @@
     <ClInclude Include="scene\model\tiny_obj_loader.h">
       <Filter>scene\model</Filter>
     </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>core</Filter>
+    </ClInclude>
     <ClInclude Include="HungryHippos.h">
-      <Filter>scene\logic</Filter>
+      <Filter>scene\model</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -182,8 +185,11 @@
     <ClCompile Include="scene\model\tiny_obj_loader.cc">
       <Filter>scene\model</Filter>
     </ClCompile>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
     <ClCompile Include="HungryHippos.cpp">
-      <Filter>scene\logic</Filter>
+      <Filter>scene\model</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
